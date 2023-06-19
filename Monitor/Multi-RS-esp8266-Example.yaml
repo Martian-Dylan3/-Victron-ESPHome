@@ -1,4 +1,6 @@
-substitutions: name: Multi-RS
+substitutions: 
+name: Multi-RS
+
 esphome:
   name: multi-rs
   platform: ESP8266
