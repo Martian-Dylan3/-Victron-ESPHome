@@ -40,10 +40,10 @@ text_sensor:
   - platform: victron
     victron_id: victron0
     model_description:
-      name: "Victron-Debug model description"
+      name: "Victron-Debug Model Description"
     firmware_version:
-      name: "Victron-Debug firmware version"
+      name: "Victron-Debug Firmware Version"
     device_type:
-      name: "Victron-Debug device type"
+      name: "Victron-Debug Device Type"
     serial_number:
-      name: "Victron-Debug serial number"
+      name: "Victron-Debug Serial Number"
