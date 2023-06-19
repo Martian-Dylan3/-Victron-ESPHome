@@ -1,14 +1,10 @@
-substitutions:
-  name: multi-rs
-  external_components_source: github://KinDR007/VictronMPPT-ESPHOME@main
-
 esphome:
-  name: ${name}
+  name: multi-rs
   platform: ESP8266
   board: d1_mini
 
 external_components:
-  - source: ${external_components_source}
+  - source: github://Martian-Dylan3/Victron_ESPHome@main
     refresh: 0s
 
 wifi:
@@ -21,12 +17,6 @@ ota:
 logger:
   baud_rate: 0
   esp8266_store_log_strings_in_flash: false
-
-mqtt:
-  broker: !secret mqtt_host
-  username: !secret mqtt_username
-  password: !secret mqtt_password
-  id: mqtt_client
 
 uart:
   id: uart_0
@@ -44,35 +34,35 @@ sensor:
   - platform: victron
     victron_id: victron0
     charging_mode_id:
-      name: "${name} charging mode id"
+      name: "Multi-RS charging mode id"
     error_code:
-      name: "${name} error code"
+      name: "Multi-RS error code"
     ac_out_current:
-      name: "${name} ac out current"
+      name: "Multi-RS ac out current"
       id: ac_current
     ac_out_voltage:
-      name: "${name} ac out voltage"
+      name: "Multi-RS ac out voltage"
       id: ac_voltage
     yield_total:
-      name: "${name} yield total"
+      name: "Multi-RS yield total"
     yield_today:
-      name: "${name} yield today"
+      name: "Multi-RS yield today"
     max_power_today:
-      name: "${name} max power today"
+      name: "Multi-RS max power today"
     yield_yesterday:
-      name: "${name} yield yesterday"
+      name: "Multi-RS yield yesterday"
     max_power_yesterday:
-      name: "${name} max power yesterday"
+      name: "Multi-RS max power yesterday"
     day_number:
-      name: "${name} day number"
+      name: "Multi-RS day number"
     battery_current:
-      name: "${name} battery current"
+      name: "Multi-RS battery current"
     panel_power:
-      name: "${name} panel power"
+      name: "Multi-RS panel power"
     battery_voltage:
-      name: "${name} battery voltage"
+      name: "Multi-RS battery voltage"
     panel_voltage:
-      name: "${name} panel voltage"
+      name: "Multi-RS panel voltage"
 
   - platform: template
     name: "${name} ac out power"
@@ -88,14 +78,14 @@ text_sensor:
   - platform: victron
     victron_id: victron0
     device_type:
-      name: "${name} device type"
+      name: "Multi-RS device type"
     serial_number:
-      name: "${name} serial number"
+      name: "Multi-RS serial number"
     firmware_version_24bit:
-      name: "${name} firmware version 24bit"
+      name: "Multi-RS firmware version 24bit"
     charging_mode:
-      name: "${name} charging mode"
+      name: "Multi-RS charging mode"
     error:
-      name: "${name} error"
+      name: "Multi-RS error"
     device_mode:
-      name: "${name} device mode"
+      name: "Multi-RS device mode"
