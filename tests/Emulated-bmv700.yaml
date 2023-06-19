@@ -1,10 +1,10 @@
 substitutions:
-  name: fake-bmv700
+  name: emulated-bmv700
   tx_pin: GPIO4
-  rx_pin: GPIO5
+  rx_pin: GPIO4
 
 esphome:
-  name: ${name}
+  name: emulated-bmv700
   platform: ESP8266
   board: d1_mini
 
@@ -19,8 +19,8 @@ logger:
 
 uart:
   baud_rate: 19200
-  tx_pin: ${tx_pin}
-  rx_pin: ${rx_pin}
+  tx_pin: GPIO4
+  rx_pin: GPIO5
   debug:
     direction: BOTH
     dummy_receiver: true
