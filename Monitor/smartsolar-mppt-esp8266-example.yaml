@@ -1,14 +1,10 @@
-substitutions:
-  name: victron-mppt
-  external_components_source: github://Martian-Dylan3/Victron_ESPHome@main
-
 esphome:
-  name: ${name}
+  name: victron-mppt
   platform: ESP8266
   board: d1_mini
 
 external_components:
-  - source: ${external_components_source}
+  - source: github://Martian-Dylan3/Victron_ESPHome@main
     refresh: 0s
 
 wifi:
@@ -30,8 +26,8 @@ mqtt:
 
 uart:
   id: uart_0
-  tx_pin: D8  # Not connected! The communication is read-only
-  rx_pin: D7  # Connect this this GPIO and GND to the MPPT charger
+  tx_pin: D7  # Not connected! The communication is read-only
+  rx_pin: D8  # Connect this this GPIO and GND to the MPPT charger
   baud_rate: 19200
   rx_buffer_size: 256
 
@@ -44,54 +40,54 @@ sensor:
   - platform: victron
     victron_id: victron0
     max_power_yesterday:
-      name: "${name} max power yesterday"
+      name: "victron-mppt max power yesterday"
     max_power_today:
-      name: "${name} max power today"
+      name: "victron-mppt max power today"
     yield_total:
-      name: "${name} yield total"
+      name: "victron-mppt yield total"
     yield_yesterday:
-      name: "${name} yield yesterday"
+      name: "victron-mppt yield yesterday"
     yield_today:
-      name: "${name} yield today"
+      name: "victron-mppt yield today"
     panel_voltage:
-      name: "${name} panel voltage"
+      name: "victron-mppt panel voltage"
     panel_power:
-      name: "${name} panel power"
+      name: "victron-mppt panel power"
     battery_current:
-      name: "${name} panel current"
+      name: "victron-mppt panel current"
     battery_voltage:
-      name: "${name} battery voltage"
+      name: "victron-mppt battery voltage"
     day_number:
-      name: "${name} day number"
+      name: "victron-mppt day number"
     charging_mode_id:
-      name: "${name} charging mode id"
+      name: "victron-mppt charging mode id"
     error_code:
-      name: "${name} error code"
+      name: "victron-mppt error code"
     tracking_mode_id:
-      name: "${name} tracking mode id"
+      name: "victron-mppt tracking mode id"
     load_current:
-      name: "${name} load current"
+      name: "victron-mppt load current"
 
 text_sensor:
   - platform: victron
     victron_id: victron0
     charging_mode:
-      name: "${name} charging mode"
+      name: "victron-mppt charging mode"
     error:
-      name: "${name} error"
+      name: "victron-mppt error"
     tracking_mode:
-      name: "${name} tracking mode"
+      name: "victron-mppt tracking mode"
     firmware_version:
-      name: "${name} firmware version"
+      name: "victron-mppt firmware version"
     device_type:
-      name: "${name} device type"
+      name: "victron-mppt device type"
     serial_number:
-      name: "${name} serial number"
+      name: "victron-mppt serial number"
 
 binary_sensor:
   - platform: victron
     victron_id: victron0
     load_state:
-      name: "${name} load state"
+      name: "victron-mppt load state"
     relay_state:
-      name: "${name} relay state"
+      name: "$victron-mppt relay state"
