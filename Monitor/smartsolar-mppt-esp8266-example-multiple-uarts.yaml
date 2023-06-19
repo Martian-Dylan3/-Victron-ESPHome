@@ -1,16 +1,14 @@
 substitutions:
-  name: victron
   device0: victron0
   device1: victron1
-  external_components_source: github://Martian-Dylan3/Victron_ESPHome@main
 
 esphome:
-  name: ${name}
+  name: victron
   platform: ESP8266
   board: d1_mini
 
 external_components:
-  - source: ${external_components_source}
+  - source: github://Martian-Dylan3/Victron_ESPHome@main
     refresh: 0s
 
 wifi:
