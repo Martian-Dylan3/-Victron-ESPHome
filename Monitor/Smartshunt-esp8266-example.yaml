@@ -37,33 +37,33 @@ sensor:
   - platform: victron
     victron_id: victron0
     battery_voltage:
-      name: "${name} battery voltage"
+      name: "${name} Battery Voltage"
     auxiliary_battery_voltage:
-      name: "${name} auxiliary battery voltage"
+      name: "${name} Auxiliary Battery Voltage"
     midpoint_voltage_of_the_battery_bank:
-      name: "${name} midpoint voltage of the battery bank"
+      name: "${name} Midpoint Voltage Of The Battery Bank"
     midpoint_deviation_of_the_battery_bank:
-      name: "${name} midpoint deviation of the battery bank"
+      name: "${name} Midpoint Deviation Of The Battery Bank"
     battery_current:
-      name: "${name} battery current"
+      name: "${name} Battery Current"
     battery_temperature:
-      name: "${name} battery temperature"
+      name: "${name} Battery Temperature"
     instantaneous_power:
-      name: "${name} instantaneous power"
+      name: "${name} Instantaneous Power"
     consumed_amp_hours:
-      name: "${name} consumed amp hours"
+      name: "${name} Consumed Amp Hours"
     state_of_charge:
-      name: "${name} state of charge"
+      name: "${name} State Of Charge"
     time_to_go:
-      name: "${name} time to go"
+      name: "${name} Time To Go"
     depth_of_the_deepest_discharge:
-      name: "${name} depth of the deepest discharge"
+      name: "${name} Depth Of The Deepest Discharge"
     depth_of_the_last_discharge:
-      name: "${name} depth of the last discharge"
+      name: "${name} Depth Of The Last Discharge"
     depth_of_the_average_discharge:
-      name: "${name} depth of the average discharge"
+      name: "${name} Depth Of The Average Discharge"
     number_of_charge_cycles:
-      name: "${name} number of charge cycles"
+      name: "${name} Number Of charge cycles"
     number_of_full_discharges:
       name: "${name} number of full discharges"
     cumulative_amp_hours_drawn:
