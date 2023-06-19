@@ -37,40 +37,40 @@ sensor:
   - platform: victron
     victron_id: victron0
     battery_voltage:
-      name: "Phoenix-Charger Battery Voltage"
+      name: "${name} Battery Voltage"
     battery_voltage_2:
-      name: "Phoenix-Charger Battery Voltage 2"
+      name: "${name} Battery Voltage 2"
     battery_voltage_3:
-      name: "Phoenix-Charger Battery Voltage 3"
+      name: "${name} Battery Voltage 3"
     battery_current:
-      name: "Phoenix-Charger Battery Current"
+      name: "${name} Battery Current"
     battery_current_2:
-      name: "Phoenix-Charger Battery Current 2"
+      name: "${name} Battery Current 2"
     battery_current_3:
-      name: "Phoenix-Charger Battery Current 3"
+      name: "${name} Battery Current 3"
     error_code:
-      name: "Phoenix-Charger Error Code"
+      name: "${name} Error Code"
     charging_mode_id:
-      name: "Phoenix-Charger Charging Mode ID"
+      name: "${name} Charging Mode ID"
     device_mode_id:
-      name: "Phoenix-Charger Device Mode ID"
+      name: "${name} Device Mode ID"
 
 text_sensor:
   - platform: victron
     victron_id: victron0
     error:
-      name: "Phoenix-Charger Error"
+      name: "${name} Error"
     charging_mode:
-      name: "Phoenix-Charger Charging Mode"
+      name: "${name} Charging Mode"
     device_type:
-      name: "Phoenix-Charger Device Type"
+      name: "${name} Device Type"
     serial_number:
-      name: "Phoenix-Charger Serial Number"
+      name: "${name} Serial Number"
     device_mode:
-      name: "Phoenix-Charger Device Mode"
+      name: "${name} Device Mode"
 
 binary_sensor:
   - platform: victron
     victron_id: victron0
     relay_state:
-      name: "Phoenix-Charger Relay State"
+      name: "${name} Relay State"
