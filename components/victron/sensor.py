@@ -31,7 +31,7 @@ from . import CONF_VICTRON_ID, VictronComponent
 
 DEPENDENCIES = ["victron"]
 
-CODEOWNERS = ["@KinDR007"]
+CODEOWNERS = ["@Martian-Dylan3"]
 
 CONF_MAX_POWER_YESTERDAY = "max_power_yesterday"
 CONF_MAX_POWER_TODAY = "max_power_today"
