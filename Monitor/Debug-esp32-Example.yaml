@@ -1,11 +1,5 @@
-substitutions:
-  name: victron-debug
-  external_components_source: github://KinDR007/VictronMPPT-ESPHOME@main
-  tx_pin: GPIO16
-  rx_pin: GPIO17
-
 esphome:
-  name: ${name}
+  name: victron-debug
 
 esp32:
   board: wemos_d1_mini32
@@ -13,7 +7,7 @@ esp32:
     type: esp-idf
 
 external_components:
-  - source: ${external_components_source}
+  - source: github://Martian-Dylan3/Victron_ESPHome@main
     refresh: 0s
 
 wifi:
@@ -27,8 +21,8 @@ logger:
 uart:
   id: uart_0
   baud_rate: 19200
-  tx_pin: ${tx_pin}
-  rx_pin: ${rx_pin}
+  tx_pin: GPIO16
+  rx_pin: GPIO17
   debug:
     direction: BOTH
     dummy_receiver: false
@@ -46,10 +40,10 @@ text_sensor:
   - platform: victron
     victron_id: victron0
     model_description:
-      name: "${name} model description"
+      name: "Victron-Debug model description"
     firmware_version:
-      name: "${name} firmware version"
+      name: "Victron-Debug firmware version"
     device_type:
-      name: "${name} device type"
+      name: "Victron-Debug device type"
     serial_number:
-      name: "${name} serial number"
+      name: "Victron-Debug serial number"
