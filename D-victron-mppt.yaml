@@ -6,7 +6,7 @@ esp8266:
   board: d1_mini
 
 external_components:
-  - source: github://KinDR007/VictronMPPT-ESPHOME@main
+  - source: github://Martian-Dylan3/Victron_ESPHome@main
     refresh: 0s
 
 wifi:
