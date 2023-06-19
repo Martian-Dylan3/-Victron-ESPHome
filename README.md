@@ -20,16 +20,16 @@ Please measure the voltage between TX and GND. In case of a logic level of 5V yo
 ```
                 UART-TTL
 ┌────────────────┐                ┌──────────────────┐
-│           GND o│<-------------->│o GND             │
-│ Victron    TX o│--------------->│o D7   ESP32/     │
-│ Charger    RX o│                │       ESP8266    │<-- GND
-│            5V o│                │                  │<-- 3.3V
+│           GND 1│<-------------->│1 GND             │
+│ Victron    TX 3│--------------->│3 D7   ESP32/     │
+│ Charger    RX 2│                │       ESP8266    │<-- GND
+│            5V 4│                │                  │<-- 3.3V
 └────────────────┘                └──────────────────┘
 
 # UART-TTL jack (JST-PH 2.0mm pinch)
 ┌─── ─────── ────┐
 │                │
-│ O   O   O   O  │
+│ 1    2   3  4  │
 │GND  RX  TX VCC │
 └────────────────┘
 ```
