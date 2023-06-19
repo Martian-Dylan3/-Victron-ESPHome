@@ -13,9 +13,7 @@ All Victron devices providing a VE.Direct port.
 
 ## Schematics
 
-Attention: The TX voltage of the VE.Direct interface depends on the product.
-
-Some are 5V, others 3.3V!
+Attention: The TX voltage of the VE.Direct interface depends on the product. Some are 5V, others 3.3V!
 https://www.victronenergy.com/live/vedirect_protocol:faq#q4is_the_vedirect_interface_33_or_5v
 
 
@@ -53,7 +51,7 @@ If you are unsure about to pin order please measure the voltage between GND and 
 
 The `uart_id` and `victron_id` is optional if you use a single UART / victron device. All sensors are optional.
 
-The victron device pushs one status message per second. To reduce the update interval of the ESPHome entities please use the `throttle` parameter to discard some messages.
+The victron device pushs one status message per second.
 
 The available numeric sensors are:
 - `max_power_yesterday`
