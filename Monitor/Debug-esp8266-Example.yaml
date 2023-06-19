@@ -13,10 +13,7 @@ wifi:
 
 ota:
 api:
-
 logger:
-  baud_rate: 0
-  esp8266_store_log_strings_in_flash: false
 
 uart:
   id: uart_0
