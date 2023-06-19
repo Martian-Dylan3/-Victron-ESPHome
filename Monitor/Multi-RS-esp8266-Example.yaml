@@ -3,7 +3,7 @@ substitutions:
   external_components_source: github://KinDR007/VictronMPPT-ESPHOME@main
 
 esphome:
-  name: ${name}
+  name: multi-rs
   platform: ESP8266
   board: d1_mini
 
