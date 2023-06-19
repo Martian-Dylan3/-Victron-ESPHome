@@ -1,14 +1,10 @@
-substitutions:
-  name: victron-smartshunt
-  external_components_source: github://Martian-Dylan3/Victron_ESPHome@main
-
 esphome:
-  name: ${name}
+  name: victron-smartshunt
   platform: ESP8266
   board: d1_mini
 
 external_components:
-  - source: ${external_components_source}
+  - source: github://Martian-Dylan3/Victron_ESPHome@main
     refresh: 0s
 
 wifi:
@@ -22,7 +18,7 @@ logger:
 uart:
   id: uart_bus
   tx_pin: D7  # Not connected! The communication is read-only
-  rx_pin: D8  # Connect this this GPIO and GND to the MPPT charger
+  rx_pin: D8
   baud_rate: 19200
   stop_bits: 1
   data_bits: 8
