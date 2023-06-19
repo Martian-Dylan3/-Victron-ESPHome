@@ -7,7 +7,7 @@ AUTO_LOAD = ["binary_sensor", "sensor", "text_sensor"]
 
 DEPENDENCIES = ["uart"]
 
-CODEOWNERS = ["@KinDR007"]
+CODEOWNERS = ["@Martian-Dylan3"]
 
 MULTI_CONF = True
 
