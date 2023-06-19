@@ -1,3 +1,4 @@
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
+- [ ] victron.cpp -- add DC_IN_V, DC_IN_I, DC_IN_P
+- [ ] victron.cpp -- Add missing pids
+- [ ] Rename Components to my repo
+- [ ] add to esphome
