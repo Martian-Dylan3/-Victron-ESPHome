@@ -1,6 +1,6 @@
 substitutions:
   name: phoenix-inverter
-  external_components_source: github://KinDR007/VictronMPPT-ESPHOME@main
+  external_components_source: github://Martian-Dylan3/Victron_ESPHome@main
 
 esphome:
   name: ${name}
