@@ -16,7 +16,7 @@ api:
 logger:
 
 uart:
-  id: uart_bus
+  id: uart_0
   tx_pin: D7  # Not connected! The communication is read-only
   rx_pin: D8
   baud_rate: 19200
