@@ -34,47 +34,46 @@ sensor:
   - platform: victron
     victron_id: victron0
     battery_voltage:
-      name: "${name} battery voltage"
+      name: "Phoenix-Inverter Battery Voltage"
     battery_current:
-      name: "${name} battery current"
+      name: "Phoenix-Inverter Battery Current"
     charging_mode_id:
-      name: "${name} charging mode id"
+      name: "Phoenix-Inverter Charging Mode ID"
     device_mode_id:
-      name: "${name} device mode id"
+      name: "Phoenix-Inverter device Mode ID"
     ac_out_voltage:
-      name: "${name} ac out voltage"
+      name: "Phoenix-Inverter AC Out voltage"
     ac_out_current:
-      name: "${name} ac out current"
+      name: "Phoenix-Inverter AC Out Current"
     ac_out_apparent_power:
-      name: "${name} ac out apparent power"
+      name: "Phoenix-Inverter AC Out Apparent Power"
     warning_code:
-      name: "${name} warning code"
+      name: "Phoenix-Inverter Warning Code"
     off_reason_bitmask:
-      name: "${name} off reason bitmask"
+      name: "Phoenix-Inverter Off Reason Bitmask"
 
 text_sensor:
   - platform: victron
     victron_id: victron0
     alarm_reason:
-      name: "${name} alarm reason"
-    # TODO: "OR"
+      name: "Phoenix-Inverter Alarm Reason"
     charging_mode:
-      name: "${name} charging mode"
+      name: "Phoenix-Inverter Charging Mode"
     firmware_version:
-      name: "${name} firmware version"
+      name: "Phoenix-Inverter Firmware Version"
     device_type:
-      name: "${name} device type"
+      name: "Phoenix-Inverter Device Type"
     serial_number:
-      name: "${name} serial number"
+      name: "Phoenix-Inverter Serial Number"
     device_mode:
-      name: "${name} device mode"
+      name: "Phoenix-Inverter Wevice Mode"
     warning:
-      name: "${name} warning"
+      name: "Phoenix-Inverter Warning"
     off_reason:
-      name: "${name} off reason"
+      name: "Phoenix-Inverter Off Reason"
 
 binary_sensor:
   - platform: victron
     victron_id: victron0
     relay_state:
-      name: "${name} relay state"
+      name: "Phoenix-Inverter Relay State"
