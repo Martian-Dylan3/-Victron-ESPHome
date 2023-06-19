@@ -45,8 +45,8 @@ If you are unsure about to pin order please measure the voltage between GND and 
 |  **3**  | **TX**       | D7 (RX)        |
 |    4    | 5V           |                |
 
-<a href="images/circuit.jpg" target="_blank">
-<img src="images/circuit_thumbnail.jpg" width="50%">
+<a href="images/VE pinout.jpg" target="_blank">
+<img src="images/VE pinout.jpg" width="50%">
 </a>
 
 The `uart_id` and `victron_id` is optional if you use a single UART / victron device. All sensors are optional.
