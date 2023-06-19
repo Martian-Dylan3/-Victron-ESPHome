@@ -1,8 +1,3 @@
-substitutions:
-  name: emulated-bmv700
-  tx_pin: GPIO4
-  rx_pin: GPIO4
-
 esphome:
   name: emulated-bmv700
   platform: ESP8266
