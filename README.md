@@ -38,12 +38,12 @@ If you are unsure about to pin order please measure the voltage between GND and 
 
 ### JST-PH jack
 
-| Pin     | Purpose      | ESP pin        |
+|   Pin   |    Purpose   |  ESP/Consumer  |
 | :-----: | :----------- | :------------- |
-|  **1**  | **GND**      | GND            |
-|    2    | RX           |                |
-|  **3**  | **TX**       | D7 (RX)        |
-|    4    | 5V           |                |
+|  **1**  |   **GND**    |       GND      |
+|    2    |      RX      |                |
+|  **3**  |    **TX**    |     D7 (RX)    |
+|    4    |      5V      |                |
 
 <a href="images/VE pinout.jpg" target="_blank">
 <img src="images/VE pinout.jpg" width="50%">
