@@ -1,3 +1,4 @@
+substitutions: name: Multi-RS
 esphome:
   name: multi-rs
   platform: ESP8266
@@ -34,38 +35,38 @@ sensor:
   - platform: victron
     victron_id: victron0
     charging_mode_id:
-      name: "Multi-RS Charging Mode ID"
+      name: "${name} Charging Mode ID"
     error_code:
-      name: "Multi-RS Error Code"
+      name: "${name} Error Code"
     ac_out_current:
-      name: "Multi-RS AC Out Current"
+      name: "${name} AC Out Current"
       id: ac_current
     ac_out_voltage:
-      name: "Multi-RS AC Out Voltage"
+      name: "${name} AC Out Voltage"
       id: ac_voltage
     yield_total:
-      name: "Multi-RS Yield Total"
+      name: "${name} Yield Total"
     yield_today:
-      name: "Multi-RS Yield Today"
+      name: "${name} Yield Today"
     max_power_today:
-      name: "Multi-RS Max Power Today"
+      name: "${name} Max Power Today"
     yield_yesterday:
-      name: "Multi-RS Yield Yesterday"
+      name: "${name} Yield Yesterday"
     max_power_yesterday:
-      name: "Multi-RS Max Power Yesterday"
+      name: "${name} Max Power Yesterday"
     day_number:
-      name: "Multi-RS Day Number"
+      name: "${name} Day Number"
     battery_current:
-      name: "Multi-RS Battery Current"
+      name: "${name} Battery Current"
     panel_power:
-      name: "Multi-RS Panel Power"
+      name: "${name} Panel Power"
     battery_voltage:
-      name: "Multi-RS Battery Voltage"
+      name: "${name} Battery Voltage"
     panel_voltage:
-      name: "Multi-RS Panel Voltage"
+      name: "${name} Panel Voltage"
 
   - platform: template
-    name: "Multi-RS AC Out Power"
+    name: "${name} AC Out Power"
     # https://github.com/esphome/issues/issues/2793#issuecomment-988257209
     lambda: |-
        auto val = id(ac_voltage).state * id(ac_current).state;
@@ -78,14 +79,14 @@ text_sensor:
   - platform: victron
     victron_id: victron0
     device_type:
-      name: "Multi-RS Device Type"
+      name: "${name} Device Type"
     serial_number:
-      name: "Multi-RS Serial Number"
+      name: "${name} Serial Number"
     firmware_version_24bit:
-      name: "Multi-RS Firmware Version 24bit"
+      name: "${name} Firmware Version 24bit"
     charging_mode:
-      name: "Multi-RS Charging Mode"
+      name: "${name} Charging Mode"
     error:
-      name: "Multi-RS Error"
+      name: "${name} Error"
     device_mode:
-      name: "Multi-RS Device Mode"
+      name: "${name} Device Mode"
