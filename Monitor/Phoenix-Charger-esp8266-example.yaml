@@ -1,3 +1,6 @@
+substitutions: 
+name: Phoenix-Charger
+
 esphome:
   name: phoenix-charger
   platform: ESP8266
