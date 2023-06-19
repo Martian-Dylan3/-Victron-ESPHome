@@ -21,7 +21,7 @@ https://www.victronenergy.com/live/vedirect_protocol:faq#q4is_the_vedirect_inter
                 UART-TTL
 ┌────────────────┐                ┌──────────────────┐
 │           GND 1│<-------------->│1 GND             │
-│ Victron    TX 3│--------------->│3 D7   ESP32/     │
+│ Victron    TX 3│--------------->│3 D8   ESP32/     │
 │ Charger    RX 2│                │       ESP8266    │<-- GND
 │            5V 4│                │                  │<-- 3.3V
 └────────────────┘                └──────────────────┘
@@ -42,7 +42,7 @@ If you are unsure about to pin order please measure the voltage between GND and 
 | :-----: | :----------- | :------------- |
 |  **1**  |   **GND**    |       GND      |
 |    2    |      RX      |                |
-|  **3**  |    **TX**    |     D7 (RX)    |
+|  **3**  |    **TX**    |     D8 (RX)    |
 |    4    |      5V      |                |
 
 <a href="images/VE pinout.jpg" target="_blank">
