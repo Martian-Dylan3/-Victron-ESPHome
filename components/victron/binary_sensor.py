@@ -7,7 +7,7 @@ from . import CONF_VICTRON_ID, VictronComponent
 
 DEPENDENCIES = ["victron"]
 
-CODEOWNERS = ["@KinDR007"]
+CODEOWNERS = ["@Martian-Dylan3"]
 
 CONF_LOAD_STATE = "load_state"
 CONF_RELAY_STATE = "relay_state"
