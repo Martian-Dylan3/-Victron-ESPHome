@@ -1,3 +1,6 @@
+substitutions:
+  name: Victron-Smartshunt
+  
 esphome:
   name: victron-smartshunt
   platform: ESP8266
