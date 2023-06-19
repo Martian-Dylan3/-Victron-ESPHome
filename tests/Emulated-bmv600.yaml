@@ -1,5 +1,5 @@
 esphome:
-  name: fake-bmv600
+  name: emulated-bmv600
   platform: ESP8266
   board: d1_mini
 
