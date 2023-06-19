@@ -1,3 +1,6 @@
+substitutions: 
+name: Phoenix-Inverter
+
 esphome:
   name: phoenix-inverter
   platform: ESP8266
@@ -34,46 +37,46 @@ sensor:
   - platform: victron
     victron_id: victron0
     battery_voltage:
-      name: "Phoenix-Inverter Battery Voltage"
+      name: "${name} Battery Voltage"
     battery_current:
-      name: "Phoenix-Inverter Battery Current"
+      name: "${name} Battery Current"
     charging_mode_id:
-      name: "Phoenix-Inverter Charging Mode ID"
+      name: "${name} Charging Mode ID"
     device_mode_id:
-      name: "Phoenix-Inverter device Mode ID"
+      name: "${name} device Mode ID"
     ac_out_voltage:
-      name: "Phoenix-Inverter AC Out voltage"
+      name: "${name} AC Out voltage"
     ac_out_current:
-      name: "Phoenix-Inverter AC Out Current"
+      name: "${name} AC Out Current"
     ac_out_apparent_power:
-      name: "Phoenix-Inverter AC Out Apparent Power"
+      name: "${name} AC Out Apparent Power"
     warning_code:
-      name: "Phoenix-Inverter Warning Code"
+      name: "${name} Warning Code"
     off_reason_bitmask:
-      name: "Phoenix-Inverter Off Reason Bitmask"
+      name: "${name} Off Reason Bitmask"
 
 text_sensor:
   - platform: victron
     victron_id: victron0
     alarm_reason:
-      name: "Phoenix-Inverter Alarm Reason"
+      name: "${name} Alarm Reason"
     charging_mode:
-      name: "Phoenix-Inverter Charging Mode"
+      name: "${name} Charging Mode"
     firmware_version:
-      name: "Phoenix-Inverter Firmware Version"
+      name: "${name} Firmware Version"
     device_type:
-      name: "Phoenix-Inverter Device Type"
+      name: "${name} Device Type"
     serial_number:
-      name: "Phoenix-Inverter Serial Number"
+      name: "${name} Serial Number"
     device_mode:
-      name: "Phoenix-Inverter Wevice Mode"
+      name: "${name} Wevice Mode"
     warning:
-      name: "Phoenix-Inverter Warning"
+      name: "${name} Warning"
     off_reason:
-      name: "Phoenix-Inverter Off Reason"
+      name: "${name} Off Reason"
 
 binary_sensor:
   - platform: victron
     victron_id: victron0
     relay_state:
-      name: "Phoenix-Inverter Relay State"
+      name: "${name} Relay State"
