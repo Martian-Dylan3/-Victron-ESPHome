@@ -19,12 +19,6 @@ ota:
 api:
 logger:
 
-mqtt:
-  broker: !secret mqtt_host
-  username: !secret mqtt_username
-  password: !secret mqtt_password
-  id: mqtt_client
-
 uart:
   - id: uart_0
     tx_pin: D7  # Not connected! The communication is read-only
