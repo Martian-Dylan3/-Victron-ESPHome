@@ -2,7 +2,6 @@ esphome:
   name: victron
   platform: ESP8266
   board: d1_mini
-  # board: nodemcuv2
 
 external_components:
   - source: github://Martian-Dylan3/Victron_ESPHome@main
