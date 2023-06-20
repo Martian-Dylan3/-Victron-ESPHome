@@ -36,7 +36,7 @@ https://www.victronenergy.com/live/vedirect_protocol:faq#q4is_the_vedirect_inter
 
 If you are unsure about to pin order please measure the voltage between GND and VCC (5V). If you measure a positive voltage you know the position of VCC and GND!
 
-### JST-PH jack
+### JST-PH 2.0 jack
 
 |   Pin   |    Purpose   |  ESP/Consumer  |
 | :-----: | :----------- | :------------- |
