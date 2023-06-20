@@ -1,5 +1,5 @@
 substitutions: 
-name: Phoenix-Charger
+  name: Phoenix-Charger
 
 esphome:
   name: phoenix-charger
