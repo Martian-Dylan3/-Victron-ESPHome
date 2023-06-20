@@ -41,9 +41,9 @@ uart:
 victron:
   - id: victron0
     uart_id: uart_0
-    throttle: 10s
+    #throttle: 10s
   - id: victron1
-    uart_id: uart_1
+    #uart_id: uart_1
     throttle: 10s
 
 sensor:
