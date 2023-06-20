@@ -1,4 +1,3 @@
 - [ ] victron.cpp -- add DC_IN_V, DC_IN_I, DC_IN_P
 - [ ] victron.cpp -- Add missing pids
-- [ ] Rename Components to my repo
 - [ ] add to esphome
