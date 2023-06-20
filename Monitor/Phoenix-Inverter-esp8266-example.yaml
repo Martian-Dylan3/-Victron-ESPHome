@@ -1,5 +1,5 @@
 substitutions: 
-name: Phoenix-Inverter
+  name: Phoenix-Inverter
 
 esphome:
   name: phoenix-inverter
