@@ -63,58 +63,58 @@ sensor:
     depth_of_the_average_discharge:
       name: "${name} Depth Of The Average Discharge"
     number_of_charge_cycles:
-      name: "${name} Number Of charge cycles"
+      name: "${name} Number Of Charge Cycles"
     number_of_full_discharges:
-      name: "${name} number of full discharges"
+      name: "${name} Number Of Full Discharges"
     cumulative_amp_hours_drawn:
-      name: "${name} cumulative amp hours drawn"
+      name: "${name} Cumulative Amp Hours Drawn"
     min_battery_voltage:
-      name: "${name} min battery voltage"
+      name: "${name} Min Battery Voltage"
     max_battery_voltage:
-      name: "${name} max battery voltage"
+      name: "${name} Max Battery Voltage"
     last_full_charge:
-      name: "${name} last full charge"
+      name: "${name} Last Full Charge"
     number_of_automatic_synchronizations:
-      name: "${name} number of automatic synchronizations"
+      name: "${name} Number Of Automatic Synchronizations"
     number_of_low_main_voltage_alarms:
-      name: "${name} number of low main voltage alarms"
+      name: "${name} Number Of Low Main Voltage Alarms"
     number_of_high_main_voltage_alarms:
-      name: "${name} number of high main voltage alarms"
+      name: "${name} Number Of High Main Voltage Alarms"
     number_of_low_auxiliary_voltage_alarms:
-      name: "${name} number of low auxiliary voltage alarms"
+      name: "${name} Number Of Low Auxiliary Voltage Alarms"
     number_of_high_auxiliary_voltage_alarms:
-      name: "${name} number of high auxiliary voltage alarms"
+      name: "${name} Number Of High Auxiliary Voltage Alarms"
     min_auxiliary_battery_voltage:
-      name: "${name} min auxiliary battery voltage"
+      name: "${name} Min Auxiliary Battery Voltage"
     max_auxiliary_battery_voltage:
-      name: "${name} max auxiliary battery voltage"
+      name: "${name} Max Auxiliary Battery Voltage"
     amount_of_discharged_energy:
-      name: "${name} amount of discharged energy"
+      name: "${name} Amount Of Discharged Energy"
     amount_of_charged_energy:
-      name: "${name} amount of charged energy"
+      name: "${name} Amount Of Charged Energy"
     dc_monitor_mode_id:
-      name: "${name} dc monitor mode id"
+      name: "${name} DC Monitor Mode ID"
 
 text_sensor:
   - platform: victron
     victron_id: victron0
     alarm_condition_active:
-      name: "${name} alarm condition active"
+      name: "${name} Alarm Condition Active"
     alarm_reason:
-      name: "${name} alarm reason"
+      name: "${name} Alarm Reason"
     model_description:
-      name: "${name} model description"
+      name: "${name} Model Description"
     firmware_version:
-      name: "${name} firmware version"
+      name: "${name} Firmware Version"
     device_type:
-      name: "${name} device type"
+      name: "${name} Device Type"
     serial_number:
-      name: "${name} serial number"
+      name: "${name} Serial Number"
     dc_monitor_mode:
-      name: "${name} dc monitor mode"
+      name: "${name} DC Monitor Mode"
 
 binary_sensor:
   - platform: victron
     victron_id: victron0
     relay_state:
-      name: "${name} relay state"
+      name: "${name} Relay State"
