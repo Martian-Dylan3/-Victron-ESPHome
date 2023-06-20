@@ -38,64 +38,64 @@ sensor:
   - platform: victron
     victron_id: victron0
     panel_voltage:
-      name: "Panel voltage"
+      name: "Panel Voltage"
       id: pv
     battery_voltage:
-      name: "Battery voltage"
+      name: "Battery Voltage"
       id: bv
     battery_current:
       name: "Battery current"
       id: bc
     load_current:
-      name: "Load current"
+      name: "Load Current"
       id: load_current
     max_power_yesterday:
-      name: "Max power yesterday"
+      name: "Max Power Yesterday"
       id: max_power_yesterday
     max_power_today:
-      name: "Max power today"
+      name: "Max Power Today"
       id: max_power_today
-      accuracy_decimals: ${accuracy}
+      accuracy_decimals: 2
     yield_total:
-      name: "Yield total"
+      name: "Yield Total"
       id: yield_total
       filters:
         # Multiplication factor from W to kW is 0.001
         - multiply: 0.001
       unit_of_measurement: kWh
-      accuracy_decimals: ${accuracy}
+      accuracy_decimals: 2
     yield_yesterday:
-      name: "Yield yesterday"
+      name: "Yield Yesterday"
       id: yield_yesterday
       filters:
         # Multiplication factor from W to kW is 0.001
         - multiply: 0.001
       unit_of_measurement: kWh
-      accuracy_decimals: ${accuracy}
+      accuracy_decimals: 2
     yield_today:
-      name: "Yield today"
+      name: "Yield Today"
       id: yt
       filters:
         # Multiplication factor from W to kW is 0.001
         - multiply: 0.001
       unit_of_measurement: kWh
-      accuracy_decimals: ${accuracy}
+      accuracy_decimals: 2
     panel_power:
-      name: "Panel power"
+      name: "Panel Power"
       id: panel_power
     day_number:
-      name: "Day sequence number"
+      name: "Day Sequence Number"
       id: day_number
       icon: "mdi:calendar-today"
     charging_mode_id:
-      name: "Charger mode id"
+      name: "Charger Mode ID"
     error_code:
-      name: "Error code"
+      name: "Error Code"
     tracking_mode_id:
-      name: "Tracker mode id"
+      name: "Tracker Mode ID"
 
   - platform: wifi_signal
-    name: "${devicename} WiFi Signal Sensor"
+    name: "WiFi Signal Sensor"
     id: rssi_sensor
     update_interval: 15s
 
@@ -118,7 +118,7 @@ sensor:
         return quality;
 
   - platform: uptime
-    name: "${devicename} Uptime"
+    name: "Uptime"
     id: uptime_s
     update_interval: 5s
 
@@ -134,9 +134,9 @@ sensor:
     icon: "mdi:battery"
     unit_of_measurement: V
     device_class: "voltage"
-    accuracy_decimals: ${accuracy}
+    accuracy_decimals: 2
   - platform: template           # Battery working percent
-    name: "Bat working percent"  # cycle batt between 3,7v - 4.17v
+    name: "Bat Working Percent"  # cycle batt between 3,7v - 4.17v
     lambda: |-
       if (((((((((id(bv).state) / 7 )) - 3.700) / (4.170 - 3.700)) * 100)) >= 115) && ((((((((id(bv).state) / 7 )) - 3.700) / (4.170 - 3.700)) * 100)) <= -25)) {
         return NAN;
@@ -147,10 +147,10 @@ sensor:
     icon: "mdi:battery"
     unit_of_measurement: "%"
     device_class: "voltage"
-    accuracy_decimals: ${accuracy}
+    accuracy_decimals: 2
 
   - platform: template   # FVE percent
-    name: "FVE percent"  # 500Wp max power of my FVE grid
+    name: "FVE Percent"  # 500Wp max power of my FVE grid
     lambda: |-
         if (((((id(panel_power).state) / 500) * 100) >= 120) && ((((id(panel_power).state) / 500) * 100) < 0)) {
           return NAN;
@@ -159,11 +159,11 @@ sensor:
     icon: "mdi:gauge"
     unit_of_measurement: "%"
     device_class: "power"
-    accuracy_decimals: ${accuracy}
+    accuracy_decimals: 2
     update_interval: 15s
 
   - platform: template   # median generated day energy
-    name: "Day median generated "  # 500Wp max power of my FVE grid
+    name: "Day Median Generated "  # 500Wp max power of my FVE grid
     lambda: |-
         return (id(yield_total).state) / (id(day_number).state);
     update_interval: 15s
@@ -185,26 +185,17 @@ text_sensor:
       name: "Firmware Version"
     device_type:
       name: "Device Type"
-
-  - platform: template
-    name: "${devicename} Config Version"
-    icon: mdi:information-outline
-    lambda: |-
-      return {"${config_version}"};
-  - platform: version
-    name: "${devicename} Esphome Version"
-    icon: mdi:information-outline
   - platform: wifi_info
     ip_address:
-      name: "${devicename} IP Address"
+      name: "IP Address"
       icon: mdi:ip
     ssid:
-      name: "${devicename} Connected SSID"
+      name: "Connected SSID"
       icon: mdi:wifi
     bssid:
-      name: "${devicename} Connected BSSID"
+      name: "Connected BSSID"
     mac_address:
-      name: "${devicename} Mac Wifi Address"
+      name: "Mac Wifi Address"
   - platform: template
     name: "${devicename} Uptime (formatted)"
     lambda: |-
