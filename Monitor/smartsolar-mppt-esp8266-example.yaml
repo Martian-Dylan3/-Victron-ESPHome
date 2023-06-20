@@ -1,3 +1,6 @@
+substitutions: 
+name: Victron-MPPT
+
 esphome:
   name: victron-mppt
   platform: ESP8266
@@ -31,54 +34,54 @@ sensor:
   - platform: victron
     victron_id: victron0
     max_power_yesterday:
-      name: "victron-mppt max power yesterday"
+      name: "${name} Max Power Yesterday"
     max_power_today:
-      name: "victron-mppt max power today"
+      name: "${name} Max Power Today"
     yield_total:
-      name: "victron-mppt yield total"
+      name: "${name} Yield Total"
     yield_yesterday:
-      name: "victron-mppt yield yesterday"
+      name: "${name} Yield Yesterday"
     yield_today:
-      name: "victron-mppt yield today"
+      name: "${name} Yield Today"
     panel_voltage:
-      name: "victron-mppt panel voltage"
+      name: "${name} Panel Voltage"
     panel_power:
-      name: "victron-mppt panel power"
+      name: "${name} Panel Power"
     battery_current:
-      name: "victron-mppt panel current"
+      name: "${name} Panel Current"
     battery_voltage:
-      name: "victron-mppt battery voltage"
+      name: "${name} Battery Voltage"
     day_number:
-      name: "victron-mppt day number"
+      name: "${name} Day Number"
     charging_mode_id:
-      name: "victron-mppt charging mode id"
+      name: "${name} Charging Mode ID"
     error_code:
-      name: "victron-mppt error code"
+      name: "${name} Error Code"
     tracking_mode_id:
-      name: "victron-mppt tracking mode id"
+      name: "${name} Tracking Mode ID"
     load_current:
-      name: "victron-mppt load current"
+      name: "${name} Load Current"
 
 text_sensor:
   - platform: victron
     victron_id: victron0
     charging_mode:
-      name: "victron-mppt charging mode"
+      name: "${name} Charging Mode"
     error:
-      name: "victron-mppt error"
+      name: "${name} Error"
     tracking_mode:
-      name: "victron-mppt tracking mode"
+      name: "${name} Tracking Mode"
     firmware_version:
-      name: "victron-mppt firmware version"
+      name: "${name} Firmware Version"
     device_type:
-      name: "victron-mppt device type"
+      name: "${name} Device Type"
     serial_number:
-      name: "victron-mppt serial number"
+      name: "${name} Serial Number"
 
 binary_sensor:
   - platform: victron
     victron_id: victron0
     load_state:
-      name: "victron-mppt load state"
+      name: "${name} Load State"
     relay_state:
-      name: "$victron-mppt relay state"
+      name: "${name} Relay State"
