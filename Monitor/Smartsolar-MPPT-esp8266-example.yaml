@@ -1,5 +1,5 @@
 substitutions: 
-name: Victron-MPPT
+  name: Victron-MPPT
 
 esphome:
   name: victron-mppt
