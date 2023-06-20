@@ -34,7 +34,7 @@ uart:
 victron:
   uart_id: uart_0
   id: victron0
-  throttle: 10s
+  #throttle: 10s
 
 text_sensor:
   - platform: victron
