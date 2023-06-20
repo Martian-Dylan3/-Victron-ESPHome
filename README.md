@@ -22,8 +22,8 @@ https://www.victronenergy.com/live/vedirect_protocol:faq#q4is_the_vedirect_inter
 ┌────────────────┐                ┌──────────────────┐
 │           GND 1│<-------------->│1 GND             │
 │ Victron    TX 3│--------------->│3 D8   ESP32/     │
-│ Charger    RX 2│                │       ESP8266    │<-- GND
-│            5V 4│                │                  │<-- 3.3V
+│ Charger    RX 2│                │       ESP8266    │
+│            5V 4│                │                  │
 └────────────────┘                └──────────────────┘
 
 # UART-TTL jack (JST-PH 2.0mm pinch)
