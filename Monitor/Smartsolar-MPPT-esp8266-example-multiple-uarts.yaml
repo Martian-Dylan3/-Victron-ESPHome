@@ -50,44 +50,44 @@ sensor:
   - platform: victron
     victron_id: victron0
     max_power_yesterday:
-      name: "${device0} max power yesterday"
+      name: "${device0} Max Power Yesterday"
     panel_voltage:
-      name: "${device0} panel voltage"
+      name: "${device0} Panel Voltage"
     panel_power:
-      name: "${device0} panel power"
+      name: "${device0} Panel Power"
     battery_current:
-      name: "${device0} panel current"
+      name: "${device0} Panel Current"
     load_current:
-      name: "${device0} load current"
+      name: "${device0} Load Current"
 
   - platform: victron
     victron_id: victron1
     max_power_yesterday:
-      name: "${device0} max power yesterday"
+      name: "${device0} Max Power Yesterday"
     panel_voltage:
-      name: "${device1} panel voltage"
+      name: "${device1} Panel Voltage"
     panel_power:
-      name: "${device1} panel power"
+      name: "${device1} Panel Power"
     battery_current:
-      name: "${device1} panel current"
+      name: "${device1} Panel Current"
     load_current:
-      name: "${device1} load current"
+      name: "${device1} Load Current"
 
 text_sensor:
   - platform: victron
     victron_id: victron0
     charging_mode:
-      name: "${device0} charging mode"
+      name: "${device0} Charging Mode"
     error:
-      name: "${device0} error"
+      name: "${device0} Error"
     tracking_mode:
-      name: "${device0} tracking mode"
+      name: "${device0} Tracking Mode"
 
   - platform: victron
     victron_id: victron1
     charging_mode:
-      name: "${device1} charging mode"
+      name: "${device1} Charging Mode"
     error:
-      name: "${device1} error"
+      name: "${device1} Error"
     tracking_mode:
-      name: "${device1} tracking mode"
+      name: "${device1} Tracking Mode"
