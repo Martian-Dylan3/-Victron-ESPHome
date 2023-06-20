@@ -49,6 +49,10 @@ If you are unsure about to pin order please measure the voltage between GND and 
 <img src="images/VE pinout.jpg" width="50%">
 </a>
 
+<a href="17835-vedirect-documentation.png" target="_blank">
+<img src="17835-vedirect-documentation.png" width="50%">
+</a>
+
 The `uart_id` and `victron_id` is optional if you use a single UART / victron device. All sensors are optional.
 
 The victron device pushs one status message per second.
