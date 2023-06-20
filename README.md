@@ -38,7 +38,7 @@ If you are unsure about to pin order please measure the voltage between GND and 
 
 ### JST-PH 2.0 jack
 
-|   Pin   |    Purpose   |  ESP/Consumer   |
+|**Victron Pin**|    Purpose   |  ESP/Consumer   |
 | :-----: | :----------: | :-------------: |
 |  **1**  |   **GND**    |     **GND**     |
 |  **2**  |    **RX**    |**Not Connected**|
